@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:badges/badges.dart';
+import 'MyTheme.dart';
 import 'screen1.dart';
 import 'screen2.dart';
 import 'screen3.dart';
@@ -14,9 +16,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-     // theme: ,
-      initialRoute:Screen1.routeName ,
+      theme: MythemeData.lightMode,
+      initialRoute:Screen2.routeName ,
       routes: {
         Screen1.routeName:(context) => Screen1(),
         Screen2.routeName:(context) => Screen2(),
